@@ -130,3 +130,93 @@ footer {
     from { transform: translateY(50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
+/* Upload Section */
+#upload {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#upload h2 {
+    color: #f5a623;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.report-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 eşit sütun */
+    gap: 20px; /* Sütunlar arası boşluk */
+    margin: 0 auto;
+    max-width: 1000px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Her rapor öğesi */
+.report-item {
+    background-color: #f1f1f1;
+    padding: 30px;
+    border: 2px solid #ddd;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.report-item a {
+    color: #333;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+.report-item.active {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+}
+
+.report-item.active a {
+    color: white;
+}
+
+/* Coming Soon alanı - Yazılar görünür olacak şekilde */
+.report-item.coming-soon {
+    color: #f5a623; /* Beyaz yerine sarımsı bir renk */
+    background-color: #e0e0e0;
+    filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-item.coming-soon p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f5a623; /* Yazıyı sarımsı yapalım, okunabilir ve şık */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Hafif bir gölge ile yazı daha belirgin olur */
+}
+
+/* Hover efektleri */
+.report-item:hover {
+    transform: translateY(-10px); /* Yukarıya kaydırma */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.report-item.active:hover {
+    background-color: #45a049;
+}
+
+.report-item.coming-soon:hover {
+    transform: scale(1.05); /* Küçük bir büyütme efekti */
+}
+
+/* Responsive tasarım: Küçük ekranlar için grid düzenini 1 sütun yap */
+@media (max-width: 768px) {
+    .report-container {
+        grid-template-columns: 1fr;
+    }
+}
+
