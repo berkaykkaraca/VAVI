@@ -164,22 +164,34 @@ footer {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    
 }
 
 .report-item a {
+    display: flex;              /* Flexbox aktif */
+    justify-content: center;    /* Yatayda ortala */
+    align-items: center;        /* Dikeyde ortala */
+    height: 100%;               /* Tüm kutuyu kaplaması için */
+    width: 100%;
     color: #333;
     font-size: 1.1rem;
     text-decoration: none;
+    text-align: center;
 }
 
 .report-item.active {
     background-color: #4CAF50;
     border-color: #4CAF50;
     color: white;
+
+    
 }
 
 .report-item.active a {
     color: white;
+    justify-content: center;
+    text-align: center;
+
 }
 
 /* Coming Soon alanı - Yazılar görünür olacak şekilde */
