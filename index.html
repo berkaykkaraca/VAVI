@@ -3,75 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Graduation Project</title>
+    <meta name="description" content="VAVI - Voice Assistant for the Visually Impaired. An AI-powered navigation and assistance system helping visually impaired individuals navigate safely.">
+    <meta name="keywords" content="VAVI, visually impaired, AI, navigation, accessibility, assistive technology">
+    <title>VAVI - Voice Assistant for the Visually Impaired</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<header>
-    <h1>Voice Assistant for the Vissually Impaired</h1>
-    <p>An AI-powered navigation and assistance system</p>
-</header>
-
-<section id="team">
-    <h2>Meet Our Team</h2>
-    <div class="team">
-        <div class="team-member">
-            <!-- <img src="images/berkay.jpg" alt="Berkay Kaan Karaca"> -->
-            <h3>Berkay Kaan Karaca</h3>
-            <p>Project Lead & AI Developer</p>
+    <nav class="navbar">
+        <div class="nav-brand">VAVI</div>
+        <div class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <div class="team-member">
-            <!-- <img src="images/kivanc.jpg" alt="Kıvanç Terzioğlu"> -->
-            <h3>Kıvanç Terzioğlu</h3>
-            <p>Software Engineer</p>
-        </div>
-        <div class="team-member">
-            <!-- <img src="images/ceyda.jpg" alt="Ceyda Kuşçuoğlu"> -->
-            <h3>Ceyda Kuşçuoğlu</h3>
-            <p>Software Engineer</p>
-        </div>
-    </div>
-</section>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+    </nav>
 
-<section id="about" class="slide-in">
-    <h2>About the Project</h2>
-    <p>Voice Assistant for the Vissually Impaired (In short VAVI) is a mobile application designed to help visually impaired individuals navigate their surroundings safely and independently. 
-       Using real-time image processing and artificial intelligence, the application analyzes the user's environment and provides essential audio guidance.</p>
-    <p>The application operates by utilizing the smartphone's camera to scan the surroundings. If an object is detected near the user, the app immediately generates an audio alert, ensuring that the user is aware of potential obstacles. More importantly, the application provides step-by-step navigation assistance for visually impaired users who need to reach a specific destination. For example, if a user is inside TED University and wants to go to the Human Resources department, the app will guide them with precise directions such as "Turn right," "Go straight," "Use the elevator and go to the 2nd floor," ensuring a smooth and safe journey.</p>
-    <p>VAVI is designed with key features to enhance accessibility:</p>
-    <ul>
-        <li>Warns users about nearby obstacles, reducing the risk of accidents.</li>
-        <li>Provides real-time navigation assistance in structured environments like universities, offices, and shopping malls.</li>
-        <li>Recognizes and identifies key objects, including stairs, doors, elevators, and human presence, allowing users to make informed decisions.</li>
-        <li>Uses advanced AI-driven image recognition to create a detailed 3D map of the surroundings.</li>
-        <li>Ensures a user-friendly voice-guided experience tailored to visually impaired individuals.</li>
-    </ul>
-    <p>By integrating cutting-edge technology,  VAVI aims to provide an innovative and practical solution to improve the mobility and independence of visually impaired individuals. Our goal is to make navigation safer, more accessible, and more intuitive for users worldwide.</p>
-</section>
-
-<section id="upload">
-    <h2>Upload Reports</h2>
-    <div class="report-container">
-        <div class="report-item active">
-            <a href="Project Specifications Report.pdf" download="Project Specifications Report.pdf">Project Specifications Report</a>
+    <section id="home" class="hero">
+        <canvas id="hero-animation-canvas"></canvas>
+        <div class="hero-content">
+            <h1>Voice Assistant for the Visually Impaired</h1>
+            <p class="hero-subtitle">Empowering independence through AI-powered navigation</p>
+            <a href="#features" class="cta-button">Learn More</a>
         </div>
-        <div class="report-item active" >
-            <a href="AnalysisReport.pdf" download="Analysis Report.pdf" >Analysis Report</a>
-        </div>
-        <div class="report-item active">
-            <a href="HighLevelDesignReport.pdf" download="HighLevelDesignReport.pdf" >High Level Design Report Report</a>
-        </div>
-        <div class="report-item coming-soon">
-            <p>Coming Soon</p>
-        </div>
-    </div>
-</section>
+        <!-- Navigation dots (optional, will add with JS later) -->
+        <div class="slider-dots"></div>
+    </section>
 
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About VAVI</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The aim of the VAVI project is to empower visually impaired individuals by providing them with real-time environmental awareness through artificial intelligence and smart device technologies. The system utilizes a smartphone camera to capture live images or videos, which are transmitted to a local server for advanced processing using deep learning models, such as YOLO. The server analyzes the visual data to detect people and potential obstacles, and then delivers intuitive audio feedback—either as directional beeps or spoken instructions—back to the user via the mobile device. By enabling users to better perceive their surroundings and navigate safely, VAVI represents a significant step toward increasing independence, safety, and confidence for visually impaired people. The project is currently in the prototype phase, with ongoing development aimed at enhancing features, security, and usability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2025 Graduation Project Team. All rights reserved.</p>
-</footer>
+    <section id="features" class="section features-section">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>Obstacle Detection</h3>
+                    <p>Real-time warning system for nearby obstacles</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Navigation</h3>
+                    <p>Step-by-step guidance in structured environments</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-object-group"></i>
+                    <h3>Object Recognition</h3>
+                    <p>Identifies stairs, doors, elevators, and people</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI Processing</h3>
+                    <p>Advanced deep learning for accurate detection</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="team" class="section team-section">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <a href="https://www.linkedin.com/in/berkay-kaan-karaca/" target="_blank" rel="noopener noreferrer" class="member-link">
+                        <div class="member-image">
+                            <img src="Berkay.jpg" alt="Berkay Kaan Karaca">
+                        </div>
+                        <h3>Berkay Kaan Karaca</h3>
+                        <p>Project Lead & AI Developer</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.linkedin.com/in/kivanc-terzioglu/" target="_blank" rel="noopener noreferrer" class="member-link">
+                        <div class="member-image">
+                            <img src="Kivanc.jpg" alt="Kıvanç Terzioğlu">
+                        </div>
+                        <h3>Kıvanç Terzioğlu</h3>
+                        <p>Software Engineer</p>
+                    </a>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.linkedin.com/in/ceyda-kuscuoglu/" target="_blank" rel="noopener noreferrer" class="member-link">
+                        <div class="member-image">
+                            <img src="Ceyda.jpg" alt="Ceyda Kuşçuoğlu">
+                        </div>
+                        <h3>Ceyda Kuşçuoğlu</h3>
+                        <p>Software Engineer</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reports" class="section reports-section">
+        <div class="container">
+            <h2>Project Reports</h2>
+            <div class="reports-grid">
+                <div class="report-item active">
+                    <a href="Project Specifications Report.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Project Specifications Report</span>
+                    </a>
+                </div>
+                <div class="report-item active">
+                    <a href="AnalysisReport.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Analysis Report</span>
+                    </a>
+                </div>
+                <div class="report-item active">
+                    <a href="HighLevelDesignReport.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>High Level Design Report</span>
+                    </a>
+                </div>
+                <div class="report-item coming-soon">
+                    <i class="fas fa-clock"></i>
+                    <span>Coming Soon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>VAVI</h3>
+                    <p>Empowering independence through technology</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#team">Team</a>
+                    <a href="#reports">Reports</a>
+                    <!-- <a href="#contact">Contact</a> -->
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 VAVI Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
