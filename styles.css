@@ -582,3 +582,209 @@ textarea:focus {
     border: 1px solid #F5C6CB;
 }
 
+/* Backlog Section Styles */
+.backlog-section {
+    background: var(--background-color);
+    padding: 100px 0;
+}
+
+.backlog-section h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.backlog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.backlog-content h3 {
+    color: var(--primary-color);
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.backlog-content h4 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.backlog-content ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.backlog-content ul ul {
+    margin-left: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.backlog-content li {
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+}
+
+.backlog-content hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 2.5rem 0 1.5rem 0;
+}
+
+.backlog-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background: var(--card-background);
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+.backlog-content th, .backlog-content td {
+    border: 1px solid #e0e0e0;
+    padding: 0.7em 1em;
+    text-align: left;
+}
+
+.backlog-content th {
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+}
+
+.backlog-content tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+@media (max-width: 768px) {
+    .backlog-section {
+        padding: 60px 0;
+    }
+    .backlog-content h2 {
+        font-size: 2rem;
+    }
+    .backlog-content h3 {
+        font-size: 1.2rem;
+    }
+    .backlog-content table, .backlog-content th, .backlog-content td {
+        font-size: 0.9rem;
+    }
+}
+
+.backlog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.backlog-card {
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(7, 122, 125, 0.07);
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 210px;
+    transition: box-shadow 0.2s;
+}
+
+.backlog-card:hover {
+    box-shadow: 0 6px 24px rgba(7, 122, 125, 0.13);
+}
+
+.backlog-card h3 {
+    font-size: 1.15rem;
+    color: var(--primary-color);
+    margin-bottom: 0.7rem;
+    font-weight: 600;
+}
+
+.backlog-card ul {
+    margin: 0 0 0.7rem 1.1rem;
+    padding: 0;
+    list-style: disc inside;
+    font-size: 0.98rem;
+}
+
+.backlog-meta {
+    font-size: 0.93rem;
+    color: #555;
+    margin-top: auto;
+    background: #f3f7f7;
+    border-radius: 6px;
+    padding: 0.4em 0.7em;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .backlog-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .backlog-card {
+        padding: 1.1rem 0.7rem;
+        min-height: 160px;
+    }
+}
+
+/* Backlog Summary Table Styles */
+.backlog-summary-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--card-background);
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(7, 122, 125, 0.07);
+    overflow: hidden;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.backlog-summary-table th, .backlog-summary-table td {
+    padding: 0.8em 1.1em;
+    text-align: left;
+}
+
+.backlog-summary-table th {
+    background: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+}
+
+.backlog-summary-table td {
+    border-top: 1px solid #e0e0e0;
+    background: #f7fafb;
+}
+
+.backlog-summary-table tr:nth-child(even) td {
+    background: #f1f6f7;
+}
+
+.backlog-summary-table tr:last-child td {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.backlog-summary-table tr:first-child th:first-child {
+    border-top-left-radius: 12px;
+}
+.backlog-summary-table tr:first-child th:last-child {
+    border-top-right-radius: 12px;
+}
+
+@media (max-width: 600px) {
+    .backlog-summary-table, .backlog-summary-table th, .backlog-summary-table td {
+        font-size: 0.92rem;
+        padding: 0.6em 0.5em;
+    }
+}
+
