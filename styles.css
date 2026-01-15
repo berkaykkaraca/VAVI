@@ -298,11 +298,24 @@ body {
 }
 
 /* Reports Section */
+.report-category-title {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.report-category-title:first-of-type {
+    margin-top: 0;
+}
+
 .reports-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     padding: 0 20px;
+    margin-bottom: 2rem;
 }
 
 .report-item {
@@ -692,7 +705,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 210px;
+    min-height: 250px;
     transition: box-shadow 0.2s;
 }
 
@@ -712,6 +725,11 @@ textarea:focus {
     padding: 0;
     list-style: disc inside;
     font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.backlog-card ul li {
+    margin-bottom: 0.5rem;
 }
 
 .backlog-meta {
@@ -731,7 +749,7 @@ textarea:focus {
     }
     .backlog-card {
         padding: 1.1rem 0.7rem;
-        min-height: 160px;
+        min-height: 200px;
     }
 }
 

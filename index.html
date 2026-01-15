@@ -133,6 +133,9 @@
     <section id="reports" class="section reports-section">
         <div class="container">
             <h2>Project Reports</h2>
+            
+            <!-- CMPE 491 Reports -->
+            <h3 class="report-category-title">CMPE 491 Reports</h3>
             <div class="reports-grid">
                 <div class="report-item active">
                     <a href="Project Specifications Report.pdf" download>
@@ -153,84 +156,142 @@
                     </a>
                 </div>
             </div>
+
+            <!-- SENG 492 Reports -->
+            <h3 class="report-category-title">SENG 492 Reports</h3>
+            <div class="reports-grid">
+                <div class="report-item active">
+                    <a href="detailedDesign.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Detailed Design Report</span>
+                    </a>
+                </div>
+                <div class="report-item active">
+                    <a href="multidisciplinary.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Multidisciplinary Report</span>
+                    </a>
+                </div>
+                <div class="report-item active">
+                    <a href="finalReport.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Final Report</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CMPE 492 Reports -->
+            <h3 class="report-category-title">CMPE 492 Reports</h3>
+            <div class="reports-grid">
+                <div class="report-item active">
+                    <a href="LLD.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Low Level Design (LLD)</span>
+                    </a>
+                </div>
+                <div class="report-item active">
+                    <a href="LLD-V'.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>LLD-Vol2</span>
+                    </a>
+                </div>
+                <div class="report-item active">
+                    <a href="test plan.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Test Plan</span>
+                    </a>
+                </div>
+                <div class="report-item active">
+                    <a href="VAVI_Final report.pdf" download>
+                        <i class="fas fa-file-pdf"></i>
+                        <span>VAVI Final Report</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="backlog" class="section backlog-section">
         <div class="container">
             <h2>Product Backlog</h2>
+            <!-- Updated based on VAVI-FinalReport.pdf -->
             <div class="backlog-grid">
                 <!-- Epic 1 Card -->
                 <div class="backlog-card">
-                    <h3>Camera Integration & Image Preprocessing</h3>
+                    <h3>Mobile Application & User Interface</h3>
                     <ul>
-                        <li><strong>1.1:</strong> CameraX real-time video feed</li>
-                        <li><strong>1.2:</strong> YUV → RGB conversion</li>
+                        <li><strong>1.1:</strong> Flutter mobile app with source/target node selection</li>
+                        <li><strong>1.2:</strong> Manual dropdown and voice-based input support</li>
+                        <li><strong>1.3:</strong> High-contrast, accessibility-focused UI design</li>
                     </ul>
                     <div class="backlog-meta">
-                        <span><strong>Assignee:</strong> Berkay Kaan Karaca</span><br>
+                        <span><strong>Assignee:</strong> Ceyda Kuşçuoğlu</span><br>
                         <span><strong>Priority:</strong> High</span>
                     </div>
                 </div>
                 <!-- Epic 2 Card -->
                 <div class="backlog-card">
-                    <h3>Model Integration & Inference</h3>
+                    <h3>Visual Location Detection</h3>
                     <ul>
-                        <li><strong>2.1:</strong> Load YOLOv5n TFLite model</li>
-                        <li><strong>2.2:</strong> Real-time inference</li>
-                        <li><strong>2.3:</strong> Performance optimization</li>
+                        <li><strong>2.1:</strong> Camera integration for frame capture (~30 frames)</li>
+                        <li><strong>2.2:</strong> Gemini API integration for visual scene analysis</li>
+                        <li><strong>2.3:</strong> Location inference from environmental cues</li>
                     </ul>
                     <div class="backlog-meta">
-                        <span><strong>Assignee:</strong> Ceyda Kuşçuoğlu</span><br>
-                        <span><strong>Priority:</strong> High, High, Medium</span>
+                        <span><strong>Assignee:</strong> Berkay Kaan Karaca</span><br>
+                        <span><strong>Priority:</strong> High</span>
                     </div>
                 </div>
                 <!-- Epic 3 Card -->
                 <div class="backlog-card">
-                    <h3>Audio Feedback System</h3>
+                    <h3>Navigation & Path Planning</h3>
                     <ul>
-                        <li><strong>3.1:</strong> Stereo audio (left/right)</li>
-                        <li><strong>3.2:</strong> Distance-based beep frequency</li>
+                        <li><strong>3.1:</strong> Shortest path computation algorithm</li>
+                        <li><strong>3.2:</strong> Text and audio dual-mode navigation instructions</li>
+                        <li><strong>3.3:</strong> Real-time route display and guidance</li>
                     </ul>
                     <div class="backlog-meta">
-                        <span><strong>Assignee:</strong> Kıvanç Terzioğlu</span><br>
+                        <span><strong>Assignee:</strong> Ceyda Kuşçuoğlu</span><br>
                         <span><strong>Priority:</strong> High</span>
                     </div>
                 </div>
                 <!-- Epic 4 Card -->
                 <div class="backlog-card">
-                    <h3>Offline & Connectivity Support</h3>
+                    <h3>Real-Time Object Detection</h3>
                     <ul>
-                        <li><strong>4.1:</strong> Full offline functionality</li>
-                        <li><strong>4.2:</strong> Hotspot update support</li>
+                        <li><strong>4.1:</strong> YOLO model integration for object detection</li>
+                        <li><strong>4.2:</strong> Half-screen camera preview during navigation</li>
+                        <li><strong>4.3:</strong> Audio alerts for detected obstacles</li>
                     </ul>
                     <div class="backlog-meta">
                         <span><strong>Assignee:</strong> Berkay Kaan Karaca</span><br>
-                        <span><strong>Priority:</strong> High, Medium</span>
+                        <span><strong>Priority:</strong> High</span>
                     </div>
                 </div>
                 <!-- Epic 5 Card -->
                 <div class="backlog-card">
-                    <h3>Accessibility-Focused UI</h3>
+                    <h3>Backend & Database</h3>
                     <ul>
-                        <li><strong>5.1:</strong> High-contrast, simple UI</li>
-                        <li><strong>5.2:</strong> TalkBack & screen reader support</li>
+                        <li><strong>5.1:</strong> FastAPI backend implementation</li>
+                        <li><strong>5.2:</strong> Microsoft SQL Server database integration</li>
+                        <li><strong>5.3:</strong> Node and edge data management for graph structures</li>
                     </ul>
                     <div class="backlog-meta">
-                        <span><strong>Assignee:</strong> Ceyda Kuşçuoğlu</span><br>
+                        <span><strong>Assignee:</strong> Kıvanç Terzioğlu</span><br>
                         <span><strong>Priority:</strong> High</span>
                     </div>
                 </div>
                 <!-- Epic 6 Card -->
                 <div class="backlog-card">
-                    <h3>Indoor Navigation Preparation</h3>
+                    <h3>Audio Feedback & Sensor Integration</h3>
                     <ul>
-                        <li><strong>6.1:</strong> Mock environment mapping</li>
-                        <li><strong>6.2:</strong> Future map integration prep</li>
+                        <li><strong>6.1:</strong> Audio feedback module for navigation instructions</li>
+                        <li><strong>6.2:</strong> Sensor module integration (camera, microphone)</li>
+                        <li><strong>6.3:</strong> Real-time audio alerts for object detection</li>
                     </ul>
                     <div class="backlog-meta">
                         <span><strong>Assignee:</strong> Kıvanç Terzioğlu</span><br>
-                        <span><strong>Priority:</strong> Medium, Low</span>
+                        <span><strong>Priority:</strong> High</span>
                     </div>
                 </div>
             </div>
@@ -241,12 +302,12 @@
                         <tr><th>Epic</th><th>User Story</th><th>Assignee</th><th>Priority</th></tr>
                     </thead>
                     <tbody>
-                        <tr><td>Camera Integration & Preprocessing</td><td>1.1, 1.2</td><td>Berkay Kaan Karaca</td><td>High</td></tr>
-                        <tr><td>Model Integration & Inference</td><td>2.1, 2.2, 2.3</td><td>Ceyda Kuşçuoğlu</td><td>High, High, Medium</td></tr>
-                        <tr><td>Audio Feedback System</td><td>3.1, 3.2</td><td>Kıvanç Terzioğlu</td><td>High</td></tr>
-                        <tr><td>Offline & Connectivity</td><td>4.1, 4.2</td><td>Berkay Kaan Karaca</td><td>High, Medium</td></tr>
-                        <tr><td>Accessibility UI</td><td>5.1, 5.2</td><td>Ceyda Kuşçuoğlu</td><td>High</td></tr>
-                        <tr><td>Indoor Navigation</td><td>6.1, 6.2</td><td>Kıvanç Terzioğlu</td><td>Medium, Low</td></tr>
+                        <tr><td>Mobile Application & User Interface</td><td>1.1, 1.2, 1.3</td><td>Ceyda Kuşçuoğlu</td><td>High</td></tr>
+                        <tr><td>Visual Location Detection</td><td>2.1, 2.2, 2.3</td><td>Berkay Kaan Karaca</td><td>High</td></tr>
+                        <tr><td>Navigation & Path Planning</td><td>3.1, 3.2, 3.3</td><td>Ceyda Kuşçuoğlu</td><td>High</td></tr>
+                        <tr><td>Real-Time Object Detection</td><td>4.1, 4.2, 4.3</td><td>Berkay Kaan Karaca</td><td>High</td></tr>
+                        <tr><td>Backend & Database</td><td>5.1, 5.2, 5.3</td><td>Kıvanç Terzioğlu</td><td>High</td></tr>
+                        <tr><td>Audio Feedback & Sensor Integration</td><td>6.1, 6.2, 6.3</td><td>Kıvanç Terzioğlu</td><td>High</td></tr>
                     </tbody>
                 </table>
             </div>
